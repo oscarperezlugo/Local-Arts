@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="localartsfinal.nearpage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid BackgroundColor="DarkOrange" RowSpacing="0" Padding="0,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.2*"/>
+                    <RowDefinition Height="13*"/>
+                    <RowDefinition Height="1.2*"/>
+                    <RowDefinition Height="0.5*"/>
+                </Grid.RowDefinitions>
+                <BoxView HeightRequest="60" Color="White" Grid.ColumnSpan="5"/>
+                <Button Text="&#xf0ac;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#bfff02" BackgroundColor="White" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Random_Clicked"/>
+                <Button Text="&#xf21d;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#ff2d97" BackgroundColor="White" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Near_Clicked"/>
+                <Button Text="&#xf53f;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#9cfb23" BackgroundColor="White" Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Artists_Clicked"/>
+                <Button Text="&#xf274;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#f95524" BackgroundColor="White" Grid.Row="0" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Events_Clicked"/>
+                <Button Text="&#xf5a0;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#ffc813" BackgroundColor="White" Grid.Row="0" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Places_Clicked"/>
+                <Button Text="&#xf015;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" BackgroundColor="DarkOrange" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Main_Clicked"/>
+                <Button Text="&#xf002;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" BackgroundColor="DarkOrange" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Search_Clicked"/>
+                <Button Text="&#xf093;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" BackgroundColor="DarkOrange" Grid.Row="2" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Publish_Clicked"/>
+                <Button Text="&#xf303;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" BackgroundColor="DarkOrange" Grid.Row="2" Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Line_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" BackgroundColor="DarkOrange" Grid.Row="2" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Profile_Clicked"/>
+                <Label Text="LINE" FontSize="Micro" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" Grid.Column="0" Grid.Row="3" FontAttributes="Bold"/>
+                <Label Text="SEARCH" FontSize="Micro" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" Grid.Column="1" Grid.Row="3" FontAttributes="Bold"/>
+                <Label Text="PUBLISH" FontSize="Micro" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" Grid.Column="2" Grid.Row="3" FontAttributes="Bold"/>
+                <Label Text="BLOG" FontSize="Micro" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" Grid.Column="3" Grid.Row="3" FontAttributes="Bold"/>
+                <Label Text="PROFILE" FontSize="Micro" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" Grid.Column="4" Grid.Row="3" FontAttributes="Bold"/>
+                <WebView Source="https://www.local-arts.com/near2/" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" HeightRequest="1200"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
